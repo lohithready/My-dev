@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>@lohithready</title>
+</head>
+<body>
+<h3>Greeting passers! since you've clicked this you may also want to click the links below.
+<br>Its just some platforms that i've put my head and worthless time into ;)</h3>
+<h2>Blogging shogging</h2>
+<a href="http://lohithr.blogspot.com/?m=1/"target="_blank">
+<p>Lohith Blogs About</p>
+</a>
+<a href="https://lohithready.blogspot.com/?m=1"/target="_blank"> <p>Another blog regarding "my thoughts"</p>
+</a>
+<h2>Creative comms.(???)</h2>
+<a href="https://www.pexels.com/@lohith-reddy-429868"/target="_blank"><p> My photo blog!</p>
+</a>
+<a href="https://youtube.com/channel/UCvDQxLQpGBFIuSV4oWR4Rxg"/target="_blank"><p> My YouTube get flamin'</p>
+</a>
+ 
