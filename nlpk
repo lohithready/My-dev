@@ -1,0 +1,36 @@
+import pytesseract
+from PIL import Image
+from nltk import word_tokenize
+from nltk.probability import FreqDist
+from nltk.corpus import stopwords
+
+# Path to the Tesseract executable (update this based on your installation)
+#pytect.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+def extract_text_from_image(image_path):
+    # Open the image file
+    img = Image.open(image_path)
+
+    # Use pytesseract to do OCR on the image
+    text = pytesseract.image_to_string(img)
+
+    return text
+
+def extract_keywords(text):
+    # Tokenize the text
+    words = word_tokenize(text.lower())
+
+    # Remove stop words
+    stop_words = set(stopwords.words("english"))
+    filtered_words = [word for word in words if word.isalnum() and word not in stop_words]
+
+    # Calculate word frequencies
+    freq_dist = FreqDist(filtered_words)
+
+    # Display the most common words
+    print(freq_dist.most_common(10))
+
+# Example usage
+image_path =r"C:\Users\acer\Desktop\property-management-agreement-uplead-791x1024.jpg"
+text_from_image = extract_text_from_image(image_path)
+extract_keywords(text_from_image)
